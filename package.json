@@ -1,25 +1,30 @@
 {
-  "name": "vue3-practice",
+  "name": "vue3-vant-template",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --port=5003 --host",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "prepare": "husky install"
   },
   "dependencies": {
+    "js-cookie": "^3.0.1",
     "pinia": "^2.0.9",
     "vant": "^3.3.7",
-    "vue": "^3.2.23"
+    "vconsole": "^3.11.0",
+    "vue": "^3.2.23",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
+    "@types/js-cookie": "^3.0.1",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
+    "@vitejs/plugin-legacy": "^1.6.4",
     "@vitejs/plugin-vue": "^1.10.2",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
@@ -30,10 +35,12 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
+    "less": "^4.1.2",
     "postcss-px2vp": "^1.1.2",
     "prettier": "^2.5.1",
     "typescript": "^4.4.4",
     "vite": "^2.7.0",
+    "vite-plugin-compression": "^0.4.0",
     "vite-plugin-style-import": "^1.4.0",
     "vue-tsc": "^0.28.10"
   },
